@@ -14,13 +14,13 @@ function page4Animation() {
         fixed.style.display = "none"
     })
 
-    var elems = document.querySelectorAll(".elem")
-    elems.forEach(function (e) {
-        e.addEventListener("mouseenter", function () {
-            var image = e.getAttribute("data-image")
-            fixed.style.backgroundImage = `url(${image})`
-        })
-    })
+    // var elems = document.querySelectorAll(".elem")
+    // elems.forEach(function (e) {
+    //     e.addEventListener("mouseenter", function () {
+    //         var image = e.getAttribute("data-image")
+    //         fixed.style.backgroundImage = `url(${image})`
+    //     })
+    // })
 }
 
 function swiperAnimation() {
