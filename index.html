@@ -9,295 +9,293 @@
     <link rel="shortcut icon" href="logo_sih-removebg.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="stylesheet" href="style.css">
+    
     <!-- Added Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
-
-    <style>
-        .animate-marquee {
-            animation: marquee 10s linear infinite;
-        }
-
-        @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-
-        .hover-rotate:hover {
-            transform: rotate(360deg);
-            transition: transform 0.5s ease-in-out;
-        }
-        /* From Uiverse.io by adamgiebl */ 
-/* From Uiverse.io by NorthFishHasNa */ 
-button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #3d405b;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 17px;
-    padding: 16px;
-    width: 130px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    border:1px solid grey;
-    border-radius:8px;
-    padding:2px 2px 2px 2px; 
-   }
-   
-   button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-   }
-   
-   button span:after {
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -15px;
-    transition: 0.5s;
-   }
-   
-   button:hover span {
-    padding-right: 15px;
-   }
-   
-   button:hover span:after {
-    opacity: 1;
-    right: 0;
-   }
-   .relative {
-    position: relative;
-}
-
-.absolute {
-    position: absolute;
-}
-
-.bg-cover {
-    background-size: cover;
-}
-
-.bg-center {
-    background-position: center;
-}
-
-.h-screen {
-    height: 100vh;
-}
-
-    </style>
-
 </head>
 
-<body class="bg-gray-900 text-white font-sans leading-relaxed">
-
-    <!-- Loader Section -->
-    <div id="loader" class="fixed inset-0 flex flex-col items-center justify-center space-y-4 bg-black bg-opacity-80 z-50">
-        <h1 class="text-6xl font-bold tracking-wide text-yellow-500 animate-pulse">UNRAVEL</h1>
-        <h1 class="text-6xl font-bold tracking-wide text-yellow-500 animate-pulse">THE</h1>
-        <h1 class="text-6xl font-bold tracking-wide text-yellow-500 animate-pulse">TRUTH.</h1>
+<body>
+    <div id="loader">
+        <h1>UNRAVEL</h1>
+        <h1>THE</h1>
+        <h1>TRUTH.</h1>
     </div>
+    <div id="fixed-image">
 
-    <!-- Fixed Image Background -->
-    <div id="fixed-image" class="fixed top--10 left-0 w-full h-full z-[-1] bg-cover bg-center opacity-40" style="background-image: url('Screenshot 2024-10-26 135545.png');"></div>
+    </div>
+    <div id="main">
 
-    <div id="main" class="overflow-hidden">
-
-        <!-- Page 1: Hero Section -->
-        <div id="page1" class="p-8 md:p-6 bg-gray-900 rounded-lg shadow-lg" >
-            <nav class="flex justify-between items-center bg-gray-800 p-4 rounded-lg shadow-md">
-                <img src="logo_sih-removebg.png" alt="Logo" class="h-12 hover-rotate">
-                <div class="space-x-6 text-lg">
-                    <a href="#" class="hover:text-blue-400 transition duration-300">Info</a>
-                    <a href="#" class="hover:text-blue-400 transition duration-300">FAQs</a>
-                    <a href="#" class="hover:text-blue-400 transition duration-300">Contact</a>
+        <div id="page1">
+            <nav>
+                <img src="logo_sih-removebg.png">
+                <!-- <img src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
+                    alt=""> -->
+                <div id="nav-part2">
+                    <h4><a href="#">Info</a></h4>
+                    <h4><a href="#">FAQs</a></h4>
+                    <h4><a href="#">Contact</a></h4>
                 </div>
-                <h3 class="text-lg cursor-pointer hover:text-blue-400 transition duration-300">Menu</h3>
+                <h3>Menu</h3>
             </nav>
-            
-            <div id="center" class="flex flex-col md:flex-row items-center justify-between mt-12">
-                <div id="left" class="md:w-1/2">
-                    <div class="flex space-x-6 text-lg">
-                        <button><span class="text"><a href="http://127.0.0.1:8000/" >AIna &#8599;</a></span></button>
-                        <button><span class="text"><a href="http://127.0.0.1:8000/" >IntelliView &#8599;</a></span></button>   
-                        <button><span class="text"><a href="http://127.0.0.1:8000/" >IntelliVoice &#8599;</a></span></button>               
+            <div id="center">
+                <div id="left">
+                    <!-- <h3>Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and
+                        environments.</h3> -->
+                    <div id="nav-part2" style="display:flex">
+                        <h4><a href="http://127.0.0.1:8000/">AIna &#8599;</a></h4>
+                        <h4><a href="http://127.0.0.1:8000/">IntelliView &#8599;</a></h4>
+                        <h4><a href="http://127.0.0.1:8000/">IntelliVoice &#8599;</a></h4>
                     </div>
-                    <h3 class="mt-6 text-lg">AIna is a deepfake detection tool which you can use to detect the legitimacy of your videos.</h3>
-                    <h3 class="mt-2 text-xl text-blue-400 font-semibold">We beat AI with AI.</h3>
+                    <h3>AIna is a deepfake detection tool which you can use to detect the ligitemacy of your videos.</h3><h3 style="color: rgb(13,81,225);"> We beat AI with AI.
+                    </h3>
+                </div>
+                <div id="right">
+                    <h1 style="font-family: Baskervville SC";>AIna </h1><h1>
+                        DEEPFAKE <br>
+                        DETECTION</h1>
                 </div>
 
-                <div id="right" class="md:w-1/3 text-center">
-                    <h1 class="text-7xl font-serif text-blue-400">AIna</h1>
-                    <h1 class="text-6xl font-serif text-white mt-4">DEEPFAKE <br> DETECTION</h1>
-                </div>                
             </div>
-            <video autoplay loop muted src="./video1.mp4" class="w-3/4 md:w-3/3 h-auto mt-8 rounded-lg shadow-2xl mx-auto"></video>
-            
+            <div id="hero-shape">
+                <!-- <div id="hero-1"></div> -->
+                <!-- <div id="hero-2"></div> -->
+                <!-- <div id="hero-3"></div> -->
+            </div>
+            <div id="gooey">
+
+            </div>
+            <video autoplay loop muted src="./video1.mp4"></video>
         </div>
-
-        <!-- Page 2: Moving Text & Deepfake Info -->
-        <div id="page2" class="p-8 md:p-16 bg-gray-800 rounded-lg shadow-lg mt-12">
-            <div id="moving-text" class="flex space-x-4 animate-marquee text-4xl text-center text-yellow-400">
-                <h1>UNRAVEL</h1>
-                <h1>THE</h1>
-                <h1>TRUTH</h1>
-            </div>
-
-            <div id="page2-bottom" class="mt-12">
-                <h1 class="text-lg leading-relaxed">We propose a simple & robust way to automatically detect the replacement & reenactment deepfakes. Upload your video to analyze its legitimacy. Be a responsible content consumer and stay away from unethical deepfakes.</h1>
-
-                <div id="bottom-part2" class="mt-8 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8">
-                    <img src="https://www.goodnewsnetwork.org/wp-content/uploads/2022/11/newsroom-deepfake-Intel-FakeCatcher-graphic.jpg" alt="" class="rounded-lg shadow-lg h-48 w-full md:w-1/3 object-cover">
-                    <div class="md:w-2/3">
-                        <p class="mb-4">We propose a simple & robust way to automatically detect deepfakes. Upload your video and check its legitimacy.</p>
-                        <p class="text-blue-400 font-semibold">Be a responsible content consumer and stay away from unethical deepfakes.</p>
-                    </div>
+        <div id="page2">
+            <div id="moving-text">
+                <div class="con">
+                    <h1>UNRAVEL</h1>
+                    <div id="gola"></div>
+                    <h1>THE</h1>
+                    <div id="gola"></div>
+                    <h1>TRUTH</h1>
+                    <div id="gola"></div>
+                </div>
+                <div class="con">
+                    <h1>UNRAVEL</h1>
+                    <div id="gola"></div>
+                    <h1>THE</h1>
+                    <div id="gola"></div>
+                    <h1>TRUTH</h1>
+                    <div id="gola"></div>
+                </div>
+                <div class="con">
+                    <h1>UNRAVEL</h1>
+                    <div id="gola"></div>
+                    <h1>THE</h1>
+                    <div id="gola"></div>
+                    <h1>TRUTH</h1>
+                    <div id="gola"></div>
                 </div>
             </div>
-        </div>
+            <div id="page2-bottom">
+                <!-- <h1>We are a group of design- driven, goal-focused creators,  producers, and designers who
+                    believe that the details  make all the difference.</h1> -->
+                <h1>We propose a simple & robust way to automatically detect the replacement & reenactment deepfakes. 
+                    Sipmly upload your video and find its legitimacy.&nbsp;&nbsp;&nbsp;&nbsp;<br> Be a responsible content consumer and stay away from unethical deepfakes.</h1>
+                <div id="bottom-part2">
+                    <img src="https://www.goodnewsnetwork.org/wp-content/uploads/2022/11/newsroom-deepfake-Intel-FakeCatcher-graphic.jpg" alt="">
+                    <!-- <img src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d1_Holding_thumb-p-500.jpg"
+                        alt=""> -->
+                    <!-- <p>We love to create, we love to solve, we love to collaborate, and we love to turn amazing ideas
+                        into reality. We’re here to partner with you through every step of the process and know that
+                        relationships are the most important things we build.</p> -->
+                    <p>We propose a simple & robust way to automatically detect the replacement & reenactment deepfakes. Sipmly upload your video and find its legitimacy.</p>
+                    <p style="color: rgb(13,81,225);">Being a responsible content consumer and stay away from unethical deepfakes.</p>
+                </div>
+            </div>
+            <div id="gooey">
 
-        <!-- Page 3: FAQ Section -->
-        <div id="page3" class="p-8 md:p-16 mt-12 ">
-            <h2 class="text-3xl text-center font-semibold text-yellow-400 mb-20">Frequently Asked Questions</h2>
-            <div id="elem-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="elem bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 hover:shadow-2xl transition duration-300 transform hover:scale-105">
-                    <h2 class="text-xl text-center cursor-pointer">FAQ's</h2>
-                    <div class="content hidden opacity-0 transform scale-95 mt-4 text-white text-sm transition-all duration-500 ease-in-out">
-                        <p>Deepfake technology uses artificial intelligence (AI) and machine learning to create realistic-looking fake videos or audio. It can manipulate real footage by replacing one person's likeness with another's or altering speech, making it appear as if someone said or did something they did not</p>
-                    </div>
-                </div>
-                <div class="elem bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 hover:shadow-2xl transition duration-300">
-                    <h2 class="text-xl text-center">What is Deepfake Detection?</h2>
-                    <div class="content hidden opacity-0 transform scale-95 mt-4 text-white text-sm transition-all duration-500 ease-in-out">
-                        <p>Deepfake detection technology involves identifying AI-generated content, such as realistic videos or images, created by using deep learning techniques. Methods include forensic analysis, biometric comparison, machine learning models, and specialized tools. These methods distinguish between authentic and manipulated fake media. As deepfake technology advances, efforts aim to detect misuse and maintain trust in multimedia.</p>
-                    </div>
-                </div>
-                <div class="elem bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 hover:shadow-2xl transition duration-300">
-                    <h2 class="text-xl text-center">Why Deepfake Detection?</h2>
-                    <div class="content hidden opacity-0 transform scale-95 mt-4 text-white text-sm transition-all duration-500 ease-in-out">
-                        <p>Deepfake detection systems are the best way to combat malicious AI-generated media content. By implementing deepfake identification, individuals and organizations can minimize the risks of misinformation, privacy breaches, and potential manipulation of public opinion. This maintains the integrity of and trust in the digital world</p>
-                    </div>
-                </div>
-                <div class="elem bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 hover:shadow-2xl transition duration-300">
-                    <h2 class="text-xl text-center">How does it work?</h2>
-                    <div class="content hidden opacity-0 transform scale-95 mt-4 text-white text-sm transition-all duration-500 ease-in-out">
-                        <p>The technology typically uses machine learning algorithms to analyze facial features, gestures, and other elements in videos. These algorithms are trained on large datasets real and synthetic (deepfake) videos. After identifying the patterns and anomalies of the dataset, the deepfake detector distinguishes between genuine and manipulated content. Additionally, some software also analyzes inconsistencies in lighting, shadows, and reflections.</p>
-                    </div>
-                </div>
-                <div class="elem bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 hover:shadow-2xl transition duration-300">
-                    <h2 class="text-xl text-center">Is my data safe?</h2>
-                    <div class="content hidden opacity-0 transform scale-95 mt-4 text-white text-sm transition-all duration-500 ease-in-out">
-                        <p>Yes, Alna does not collect any data that you provide to us. Your data is completely safe and is not stored or collected. We simply use the videos that you have uploaded to give you the authentication that you want. Our deepfake detection device, Alna, does not support any form of content theft.</p>
-                    </div>
-                </div>
-                <div class="elem bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 hover:shadow-2xl transition duration-300">
-                    <h2 class="text-xl text-center">What should I do if I find a deepfake?</h2>
-                    <div class="content hidden opacity-0 transform scale-95 mt-4 text-white text-sm transition-all duration-500 ease-in-out">
-                        <p>Currently our software allows you to analyze only videos. But soon with our updates, we are planning on adding more media that you can accurately analyze. These will include, imagery, text, artwork etc.</p>
-                    </div>
-                </div>
             </div>
         </div>
-
-        <!-- Page 4: How AIna Works Section -->
+        <div id="page3">
+            <div id="elem-container">
+                <div id="elem1" class="elem"
+                    >
+                    <h2>FAQ's</h2>
+                </div>
+                <!-- <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1700975928909-da4a46227a47?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8">
+                    <div class="overlay"></div>
+                    <h2>What is Deepfake Detection?</h2>
+                </div> -->
+                <div class="elem"
+                    data-image="1.jpg">
+                    <div class="overlay"></div>
+                    <h2>What is Deepfake Detection?</h2>
+                </div>
+                <!-- <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1701077137611-9be394bf62f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="overlay"></div>
+                    <h2>Why Deepfake Detection?</h2>
+                </div> -->
+                <div class="elem"
+                    data-image="2.jpg">
+                    <div class="overlay"></div>
+                    <h2>Why Deepfake Detection?</h2>
+                </div>
+                <!-- <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1701014159309-4a8b84faadfe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="overlay"></div>
+                    <h2>How does it work?</h2>
+                </div> -->
+                <div class="elem"
+                    data-image="3.jpg">
+                    <div class="overlay"></div>
+                    <h2>How does it work?</h2>
+                </div>
+                <!-- <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1700924546093-f914fd5b8814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="overlay"></div>
+                    <h2>Is my data safe when using this tool?</h2>
+                </div> -->
+                <div class="elem"
+                    data-image="5.jpg">
+                    <div class="overlay"></div>
+                    <h2>Is my data safe when using this tool?</h2>
+                </div>
+                <!-- <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1700601437860-e66da79cf6d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="overlay"></div>
+                    <h2>What should I do if I find a deepfake?</h2>
+                </div> -->
+                <div class="elem"
+                    data-image="6.jpg">
+                    <div class="overlay"></div>
+                    <h2>What should I do if I find a deepfake?</h2>
+                </div>
+                <!-- <div class="elem"
+                    data-image="https://images.unsplash.com/photo-1700769025506-6c3dcb9ec9b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OXx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="overlay"></div>
+                    <h2>What type of media can I analyze?</h2>
+                </div> -->
+                <div class="elem"
+                    data-image="7.jpg">
+                    <div class="overlay"></div>
+                    <h2>What type of media can I analyze?</h2>
+                </div>
+            </div>
+        </div>
         <div id="page4">
-            <h1 class="text-4xl md:text-5xl font-serif text-yellow-400 text-center md:ml-9% mb-25 animate-pulse" style="margin-bottom:50px">
-                How AIna Deepfake Detector Works?
-            </h1>
-            <div class="swiper mySwiper" style="padding:10px 10px 10px 10px; display:flex; justify-content:space-between">
-                <img src="oneo.jpg" alt="" height="280px" width="400px" class="w-full h-auto rounded-lg shadow-lg">
-                <img src="twoo.jpg" alt="" height="280px" width="400px" class="w-full h-auto rounded-lg shadow-lg">
-                <img src="threeo.jpg" alt="" height="280px" width="400px" class="w-full h-auto rounded-lg shadow-lg">
+            <h1 style="color: white; text-align: center; margin-left: 7%; font-family: Baskervville SC;">How AIna Deepfake Detector Works?</h1>
+            <div class="swiper mySwiper">
+                <img src="oneo.jpg" alt="">
+                <img src="twoo.jpg" alt="">
+                <img src="threeo.jpg" alt="">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                </div>
             </div>
         </div>
-        
-        <!-- Page 5: Visualizer Section -->
-        <div id="page4" style="margin-top:50px">
-            <h1 class="text-4xl md:text-5xl font-serif text-yellow-400 text-center md:ml-7% mb-15 animate-pulse" style="margin-bottom:50px">
-                Video Intelligence Visualizer
-            </h1>            
-            <div class="swiper mySwiper" style="padding:10px 10px 10px 10px; display:flex; justify-content:space-between">
+        <div id="page4">
+            <h1 style="color: white; text-align: center; margin-left: 7%; font-family: Baskervville SC; margin-bottom:20px">Video Intelligence Visualizer</h1>    
+            <div class="swiper mySwiper" style="margin-left:80px">
                 <img src="Screenshot 2024-10-19 104545.png" height="680px" width="430px" alt="">
                 <img src="processing.png" height="680px" width="430px" alt="">
                 <img src="vissulizing.png" height="700px" width="400px" alt="">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                </div>
+                
             </div>
         </div>
+        <div id="page5">
+
+        </div>
+        <div id="full-scr">
+            <div id="full-div1">
+                
+            </div>
+        </div>
+    </div>
+    <div id="footer" style="color: white;">
         
-    </div>
-    <div id="footer" class="bg-gray-900 text-white py-8" style="margin-top:50px">
-        <div id="footer-div" class="flex flex-col md:flex-row justify-between items-center px-8 md:px-16">
-            <div class="mb-6 md:mb-0">
-                <p class="text-lg font-semibold">Helping Deepfake to be Identified</p>
-                <form class="mt-4">
-                    <label for="email" class="block mb-2 text-sm">E-mail:</label>
-                    <input type="email" placeholder="E-mail" class="w-full md:w-auto px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-300">
-                </form>
-                <h2 class="mt-6 text-xl font-bold text-yellow-400">Contact Us</h2>
+        <h1 style="font-family: Baskervville SC; text-align: center;">AIna</h1>
+        <div id="gooey">
+
+        </div>
+        <footer class="footer" style="position:absolute;bottom:0px;width:100%">
+            <div class="gradient-bg"></div>
+            <div class="glowing-orb"></div>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="contact-info">
+                        <div class="logo">AIna</div>
+                        <p class="logo-text">Empowering the future through artificial intelligence and innovative solutions.</p>
+                    </div>
+    
+    
+                    <div class="contact-section">
+                        <h3>Contact Us</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                                <span>teamAIna@yahoo.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM12 11.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                                <span>Plot No's: 8-11, Tech Zone II, Greater Noida</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24">
+                                    <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+                                </svg>
+                                <span>BENNETT UNIVERSITY</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="contact-info newsletter-section">
+                        <h3>Stay Updated</h3>
+                        <div class="newsletter-input">
+                            <input type="email" placeholder="Enter your work email">
+                        </div>
+                        <button class="newsletter-button">Subscribe</button>
+                    </div>
+                </div>
+    
+                <div class="bottom-bar">
+                    <div class="copyright">
+                        © 2024 Gallon - All Rights Reserved
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link hover-glow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <h1 class="text-4xl font-serif text-blue-400 text-center md:text-right mb-6 md:mb-0">AIna</h1>
-        </div>
-    
-        <div id="footer-bottom" class="mt-8 text-center">
-            <p class="font-serif text-lg text-gray-400">&copy; Team Gallon</p>
         </div>
     </div>
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const scroll = new LocomotiveScroll();
-    </script>
-    <script>
-        // Wait for the DOM content to load completely
-        document.addEventListener('DOMContentLoaded', function () {
-            // Set a timeout for 2 seconds (2000 milliseconds)
-            setTimeout(function () {
-                // Get the loader element
-                var loader = document.getElementById('loader');
-                // Hide the loader by setting display to none
-                loader.style.display = 'none';
-            }, 2000); // 2000 milliseconds = 2 seconds
-        });
-    </script>
-
-    <script>
-        document.querySelectorAll('.elem').forEach(card => {
-            card.addEventListener('click', () => {
-                // Select the content section of the clicked card
-                const content = card.querySelector('.content');
-
-                // Check if the content is already visible
-                const isCurrentlyVisible = !content.classList.contains('hidden');
-
-                // Hide all other content sections and reset their animations
-                document.querySelectorAll('.content').forEach(otherContent => {
-                    otherContent.classList.add('hidden', 'opacity-0', 'scale-95');
-                    otherContent.classList.remove('opacity-100', 'scale-100');
-                });
-
-                // Toggle the visibility and animation of the clicked card's content
-                if (!isCurrentlyVisible) {
-                    content.classList.remove('hidden');
-                    setTimeout(() => {
-                        content.classList.remove('opacity-0', 'scale-95');
-                        content.classList.add('opacity-100', 'scale-100');
-                    }, 10); // Delay to trigger the CSS animation
-                }
-            });
-        });
-    </script>
-    
+    <script src="script.js"></script>
 </body>
 
 </html>
